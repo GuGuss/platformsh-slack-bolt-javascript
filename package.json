@@ -13,7 +13,6 @@
   "author": "Platform.sh",
   "license": "MIT",
   "dependencies": {
-    "@slack/bolt": "^1.6.0",
-    "platformsh-config": "^2.0.0"
+    "@slack/bolt": "^2.7.0"
   }
 }
