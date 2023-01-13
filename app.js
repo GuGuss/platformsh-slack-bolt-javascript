@@ -15,7 +15,8 @@ const { App } = require("@slack/bolt");
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET
+  signingSecret: process.env.SLACK_SIGNING_SECRET,
+  port: process.env.PORT || 8888
 });
 
 // This will match any Slack message from channels where the bot has been invited.
