@@ -2,7 +2,8 @@ const http = require("http");
 
 // Somehow throwing errors: (node:147) UnhandledPromiseRejectionWarning: Error: Table 'main.platforminfo' doesn't exist
 //const config = require("platformsh-config").config();
-const config.port = 8888;
+const config;
+config.port = 8888;
 
 const server = http.createServer(async function(_request, response) {
   // Make the output.
