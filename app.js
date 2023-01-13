@@ -17,8 +17,7 @@ const { App } = require("@slack/bolt");
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET,
-  port: process.env.PORT || 8888
+  signingSecret: process.env.SLACK_SIGNING_SECRET
 });
 
 // This will match any Slack message from channels where the bot has been invited.
@@ -68,7 +67,7 @@ server.listen(8888, function() {
 
 (async () => {
   // Start your app
-  await app.start();
+  await app.start(process.env.PORT || 3000);
 
   console.log('⚡️ Bolt app is running!');
 })();
