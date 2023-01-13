@@ -2,7 +2,7 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "Example Node.js project for Platform.sh",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +13,7 @@
   "author": "Platform.sh",
   "license": "MIT",
   "dependencies": {
-    "mysql2": "^1.6.5",
+    "@slack/bolt": "^1.6.0",
     "platformsh-config": "^2.0.0"
   }
 }
