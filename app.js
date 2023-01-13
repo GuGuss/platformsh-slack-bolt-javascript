@@ -1,17 +1,3 @@
-//const http = require("http");
-
-// Somehow throwing errors: (node:147) UnhandledPromiseRejectionWarning: Error: Table 'main.platforminfo' doesn't exist
-//const config = require("platformsh-config").config();
-
-/*
-const server = http.createServer(async function(_request, response) {
-  // Make the output.
-  const outputString = `Hello, World! - A simple Node.js template for Platform.sh`
-  response.writeHead(200, { "Content-Type": "text/plain" });
-  response.end(outputString);
-});
-//*/
-
 // Require the Bolt package (github.com/slackapi/bolt)
 const { App } = require("@slack/bolt");
 
@@ -56,14 +42,6 @@ app.message(async ({ message, say }) => {
   }
   
 });
-
-// Get PORT and start the server
-/*
-server.listen(config.port, function() {
-server.listen(8888, function() {
-  console.log('⚡️ Slack Bolt app is running!');
-});
-//*/
 
 (async () => {
   // Start your app
