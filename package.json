@@ -1,16 +1,16 @@
 {
-  "name": "nodejs",
+  "name": "threader",
   "version": "1.0.0",
-  "description": "Example Node.js project for Platform.sh",
+  "description": "Slack bot hosted on Platform.sh",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformsh-templates/nodejs.git"
+    "url": "https://github.com/GuGuss/platformsh-slack-bolt-javascript.git"
   },
-  "author": "Platform.sh",
+  "author": "GuGuss",
   "license": "MIT",
   "dependencies": {
     "@slack/bolt": "^2.7.0"
