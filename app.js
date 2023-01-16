@@ -43,7 +43,7 @@ app.message(async ({ message, say }) => {
   }
 
   if (replyCount == process.env.THREAD_NUMBER_LIMIT) {
-    replyMessage = `Hi :wave:, this thread is becoming quite long (${replyCount} messages)! Have you considered opening an issue or schedule a call to find a solution?`;
+    replyMessage = `:warning: This thread is becoming quite long (${replyCount} messages)! Have you considered identifying an owner, opening an issue, or scheduling a call to find a solution?`;
     // Reply as a thread within the conversation.
     await say({ text: `${replyMessage}`, thread_ts: threadTs });
   }
