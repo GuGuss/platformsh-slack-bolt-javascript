@@ -23,8 +23,6 @@ app.message(async ({ message, say }) => {
     threadTs = message.ts;
   }
 
-  //console.log (message);
-
   // Get the threads posted to the conversation containing the message.
   try {
     const result = await app.client.conversations.replies({
@@ -43,7 +41,7 @@ app.message(async ({ message, say }) => {
   }
 
   if (replyCount == process.env.THREAD_NUMBER_LIMIT) {
-    replyMessage = `:warning: This thread is becoming quite long (${replyCount} messages)! Have you considered identifying an owner, opening an issue, or scheduling a call to find a solution?`;
+    replyMessage = `:warning: This thread is becoming quite long (${replyCount} messages)! Please identify a owner, and consider one of the following: (1) Create an issue, (2) Schedule a call, (3) Write a Guru card.`;
     // Reply as a thread within the conversation.
     await say({ text: `${replyMessage}`, thread_ts: threadTs });
   }
